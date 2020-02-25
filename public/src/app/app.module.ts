@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { HttpService } from './http.service';
-import { EditComponent } from './edit/edit.component';
 
 
 
@@ -15,7 +14,6 @@ import { EditComponent } from './edit/edit.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    EditComponent,
    
   ],
   imports: [
