@@ -423,7 +423,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"]
         ],
         providers: [_http_service__WEBPACK_IMPORTED_MODULE_8__["HttpService"]],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]],
     })
 ], AppModule);
 
@@ -524,7 +524,7 @@ let HomeComponent = class HomeComponent {
     }
     ngOnInit() {
     }
-    getClicked() {
+    getClicked($event) {
         this.recipesFound = [];
         for (let key in this.igsinform) {
             if (this.igsinform[key] == true) {
