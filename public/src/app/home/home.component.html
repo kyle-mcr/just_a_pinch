@@ -1,6 +1,6 @@
 <div class="container">
     <div class="head">
-        <h4>What Ingredients Do You Have?</h4>
+        <h4 id="title">What Ingredients Do You Have?</h4>
         <button id="btnd" class="btn btn-danger float-right" (click)="resetToFalse()">reset</button>
     </div>
     <div class="main">
@@ -76,18 +76,18 @@
                         </div>
                     </div>
                 </div>
-                <button id="subbtn" type="submit">submit</button>
+                <button id="subbtn" type="submit">Submit</button>
             </div>
         </div>
         <div *ngIf="recipesFound" class="results pb-4">
-            <h4 class="display-4 ml-4">Recipes!</h4>
+            <h4 id="title" class="display-4 ml-4">Recipes!</h4>
             <div *ngFor="let i of recipesFound" class="result mt-2 ml-4">
                 <h5>{{i.title}}</h5>
                 <div class="ingredss">
                     <img *ngIf="i.thumbnail" src="{{i.thumbnail}}" alt="">
                     <img *ngIf="!i.thumbnail"
                         src="http://lehighvalleymarketplace.com/wp-content/uploads/2010/11/bakingbasics.jpg" alt="">
-                    <p><b>Ingredients needed:</b> {{i.ingredients}}</p>
+                    <p id="ing_list"><b id="ings">Ingredients needed:</b> {{i.ingredients}}</p>
 
                 </div>
                 <a href="{{i.href}}" target="_blank">link to recipe</a>
