@@ -75,7 +75,7 @@ export class HomeComponent implements OnInit {
 
     }
 
-    getClicked() {
+    getClicked($event: any) {
         this.recipesFound = [];
         for (let key in this.igsinform) {
             if (this.igsinform[key] == true) {
